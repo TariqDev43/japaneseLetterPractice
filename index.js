@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    ********************************************* */
 
   let lettersJson = {};
+  document.documentElement.classList = 'dark';
 
   // Fetch the JSON file
   await fetch('lettersJson.json')
@@ -40,6 +41,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     });
   }
+
+  let themeButton = document.getElementById('theme-change');
+  themeButton.addEventListener('click', (e) => {
+    if (document.documentElement.classList[0] == 'dark') {
+      document.documentElement.classList = 'light';
+      document.documentElement.classList = 'light';
+    } else {
+      document.documentElement.classList = 'dark';
+    }
+  });
 
   /*   Select Letters
    ********************************************* */
@@ -172,6 +183,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         for (var [key, value] of Object.entries(value)) {
           const selectedLetter = document.createElement('div');
           selectedLetter.classList.add('selected-letter');
+          selectedLetter.setAttribute('data-test', value.ans);
+
           if (value.show) {
             selectedLetter.classList.add('selected');
           }
@@ -263,9 +276,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   /*   Call Starter Function
    ********************************************* */
-
-  // getLetters(lettersJson);
-  // const filtered = filterLetters('S', lettersJson);
 
   displaySelectedLetter();
 
