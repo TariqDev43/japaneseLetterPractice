@@ -12,7 +12,8 @@ html {
 :root.light {
   --shadow: 1px 3px 8px rgb(160, 159, 159);
   --btn-shadow: 1px 2px 4px rgb(160, 159, 159);
-  --bgColor: rgb(237, 242, 243);
+  --bgColor: rgb(231, 239, 240);
+  --fgColor: rgb(255, 255, 255);
   --primary-color: hsl(224, 98%, 51%);
   --primary-color-hover: hsl(212, 100%, 40%);
   --success-color: rgb(24, 225, 24);
@@ -240,7 +241,7 @@ input {
   position: relative;
   background: linear-gradient(to bottom, var(--fgColor) 34%, var(--primary-color) 65%) top;
   background-size: 100% 300%;
-  transition: 0.5s ease-out;
+  transition: 0.5s ease-in;
 }
 
 .selected-letter:hover:before {
@@ -255,10 +256,11 @@ input {
   box-shadow: var(--btn-shadow);
   border-radius: 10px;
   pointer-events: none;
+  color: white;
 }
 
 .selected-letter.selected {
-  color: var(--text-color);
+  color: white;
   background-position: bottom;
 }
 
