@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    ********************************************* */
 
   let lettersJson = {};
+  let letters = {};
   document.documentElement.classList = 'dark';
 
   // Fetch the JSON file
@@ -75,15 +76,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const toggleLetter = (e) => {
     e.target.classList.toggle('selected');
-    let letter = getLetters(lettersJson);
+    letters = getLetters(lettersJson);
 
-    letter[e.target.innerHTML].show = !letter[e.target.innerHTML].show;
-    displayLetterContent(letter);
+    letters[e.target.innerHTML].show = !letters[e.target.innerHTML].show;
+    displayLetterContent(letters);
   };
 
   const clearAll = (e) => {
     mainGroup = e.target.previousElementSibling.innerText;
-    let letters = getLetters(lettersJson);
+    letters = getLetters(lettersJson);
     for (var [key, value] of Object.entries(lettersJson[mainGroup.toLowerCase()])) {
       for (var [item, ans] of Object.entries(value)) {
         letters[item].show = false;
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   const checkAllGroup = (mainGroup, e) => {
-    let letter = getLetters(lettersJson);
+    letters = getLetters(lettersJson);
 
     let allSelected = true;
     for (let [key, value] of Object.entries(mainGroup)) {
@@ -116,16 +117,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       for (var child of e.target.parentNode.children) {
         child.classList.add('selected');
         for (var [key, value] of Object.entries(mainGroup)) {
-          letter[key].show = true;
-          displayLetterContent(letter);
+          letters[key].show = true;
+          displayLetterContent(letters);
         }
       }
     } else {
       for (var child of e.target.parentNode.children) {
         child.classList.remove('selected');
         for (var [key, value] of Object.entries(mainGroup)) {
-          letter[key].show = false;
-          displayLetterContent(letter);
+          letters[key].show = false;
+          displayLetterContent(letters);
         }
       }
     }
@@ -277,9 +278,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   /*   Call Starter Function
    ********************************************* */
 
+  const shuffleLetter = document.getElementById('shuffle');
+  shuffleLetter.addEventListener('click', (e) => {
+    displayLetterContent(shuffle(letters));
+  });
+
   displaySelectedLetter();
 
-  const letters = getLetters(lettersJson);
+  letters = getLetters(lettersJson);
   displayLetterContent(letters);
 
   /*   END

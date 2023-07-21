@@ -70,11 +70,30 @@ input {
   color: white;
   padding: 0.3rem 0.7rem;
   border: none;
+  margin: 5px;
   border-radius: 10px;
   box-shadow: var(--btn-shadow);
   text-transform: uppercase;
+  float: right;
+  cursor: pointer;
 }
 
+.shuffle-letter {
+  background-color: hsl(295, 79%, 40%);
+  color: white;
+  margin: 5px;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--btn-shadow);
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+}
+
+.shuffle-letter:hover {
+  background-color: hsl(295, 79%, 35%);
+}
 .theme-change:hover {
   background-color: hsl(120, 100%, 20%);
 }
