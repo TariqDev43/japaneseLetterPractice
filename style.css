@@ -10,8 +10,11 @@ html {
 
 :root {
   --shadow: 1px 3px 8px rgb(160, 159, 159);
-  --btn-shadow: 1px 2px 4px rgb(160, 159, 159);
-  --bgColor: rgb(237, 242, 243);
+  --btn-shadow: 1px 2px 4px rgb(0, 0, 0);
+  /* --btn-shadow: 1px 2px 4px rgb(160, 159, 159); */
+  --bgColor: rgb(3, 3, 3);
+  --fgColor: rgb(34, 32, 32);
+  /* --bgColor: rgb(237, 242, 243); */
   --primary-color: rgb(0, 119, 255);
   --primary-color-hover: hsl(212, 100%, 40%);
 
@@ -21,6 +24,7 @@ html {
 body {
   background-color: var(--bgColor);
   font-family: 'Noto Sans', sans-serif;
+  color: white;
 }
 
 .section1 {
@@ -28,9 +32,14 @@ body {
   width: 100%;
 }
 
+input {
+  background-color: var(--fgColor);
+  color: white;
+}
+
 .main-container {
-  width: 90%;
   position: absolute;
+  width: 90%;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -45,7 +54,7 @@ body {
 }
 
 .switch {
-  background-color: white;
+  background-color: var(--fgColor);
   margin-right: 10px;
   padding: 0.45rem 0.9rem;
   box-shadow: var(--shadow);
@@ -60,7 +69,7 @@ body {
 
 .switch.active {
   background-color: var(--primary-color);
-  color: white;
+  /* color: var(--fgColor); */
   margin-right: 10px;
   padding: 5px 10px;
   box-shadow: var(--shadow);
@@ -69,7 +78,7 @@ body {
 }
 
 .main-content-container {
-  background-color: white;
+  background-color: var(--fgColor);
   box-shadow: var(--shadow);
   padding: 15px 15px;
   border-radius: 8px;
@@ -133,19 +142,20 @@ body {
 }
 
 .clear-button {
-  background-color: white;
+  background-color: var(--fgColor);
   box-shadow: var(--btn-shadow);
   text-transform: uppercase;
   padding: 0.25rem 0.7rem;
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--fgColor);
   background-color: hsl(348, 83%, 47%);
   border-radius: 5px;
   cursor: pointer;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: white;
 }
 .clear-button:hover {
   background-color: hsl(348, 83%, 40%);
@@ -162,7 +172,8 @@ body {
 }
 
 .selected-letter {
-  background-color: white;
+  /* background-color: white; */
+  background-color: var(--fgColor);
   box-shadow: var(--btn-shadow);
   padding: 3px 10px;
   border-radius: 8px;
@@ -177,6 +188,8 @@ body {
 .selected-letter.selected {
   background-color: var(--primary-color);
   color: white;
+
+  /* color: var(--fgColor); */
 }
 
 .selected-letter.selected:hover {
@@ -194,12 +207,16 @@ body {
   text-align: center;
 }
 .item-container {
-  background-color: white;
-  box-shadow: var(--shadow);
+  background-color: var(--fgColor);
+  box-shadow: var(--btn-shadow);
   padding: 8px 10px;
   border-radius: 5px;
   margin: 5px;
   animation: append-animate 0.3s linear;
+}
+
+.item-container:hover {
+  background-color: red;
 }
 
 @keyframes append-animate {
@@ -225,7 +242,7 @@ body {
 .form-input {
   border: none;
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   text-align: center;
   font-size: large;
 }
@@ -250,5 +267,5 @@ body {
 
 .animate-container:hover {
   background-position: bottom;
-  color: white;
+  color: var(--fgColor);
 }
