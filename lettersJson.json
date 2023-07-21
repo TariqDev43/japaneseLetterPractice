@@ -1,0 +1,138 @@
+{
+  "hiragana": {
+    "Vowels": {
+      "あ": { "ans": "a", "show": true },
+      "い": { "ans": "i", "show": true },
+      "う": { "ans": "u", "show": true },
+      "え": { "ans": "e", "show": true },
+      "お": { "ans": "o", "show": true }
+    },
+    "S": {
+      "さ": { "ans": "sa", "show": true },
+      "し": { "ans": "shi", "show": true },
+      "す": { "ans": "su", "show": true },
+      "せ": { "ans": "se", "show": true },
+      "そ": { "ans": "so", "show": true }
+    },
+    "K": {
+      "か": { "ans": "ka", "show": true },
+      "き": { "ans": "ki", "show": true },
+      "く": { "ans": "ku", "show": true },
+      "け": { "ans": "ke", "show": true },
+      "こ": { "ans": "ko", "show": true }
+    },
+    "T": {
+      "た": { "ans": "ta", "show": true },
+      "ち": { "ans": "chi", "show": true },
+      "つ": { "ans": "tsu", "show": true },
+      "て": { "ans": "te", "show": true },
+      "と": { "ans": "to", "show": true }
+    },
+    "N": {
+      "な": { "ans": "na", "show": true },
+      "に": { "ans": "ni", "show": true },
+      "ぬ": { "ans": "nu", "show": true },
+      "ね": { "ans": "ne", "show": true },
+      "の": { "ans": "no", "show": true }
+    },
+    "H": {
+      "は": { "ans": "ha", "show": true },
+      "ひ": { "ans": "hi", "show": true },
+      "ふ": { "ans": "fu", "show": true },
+      "へ": { "ans": "he", "show": true },
+      "ほ": { "ans": "ho", "show": true }
+    },
+    "M": {
+      "ま": { "ans": "ma", "show": true },
+      "み": { "ans": "mi", "show": true },
+      "む": { "ans": "mu", "show": true },
+      "め": { "ans": "me", "show": true },
+      "も": { "ans": "mo", "show": true }
+    },
+    "Y": {
+      "や": { "ans": "ya", "show": true },
+      "ゆ": { "ans": "yu", "show": true },
+      "よ": { "ans": "yo", "show": true }
+    },
+    "R": {
+      "ら": { "ans": "ra", "show": true },
+      "り": { "ans": "ri", "show": true },
+      "る": { "ans": "ru", "show": true },
+      "れ": { "ans": "re", "show": true },
+      "ろ": { "ans": "ro", "show": true }
+    },
+    "W": {
+      "わ": { "ans": "wa", "show": true },
+      "を": { "ans": "wo", "show": true },
+      "ん": { "ans": "n", "show": true }
+    }
+  },
+  "katakana": {
+    "Vowels": {
+      "ア": { "ans": "a", "show": true },
+      "イ": { "ans": "i", "show": true },
+      "ウ": { "ans": "u", "show": true },
+      "エ": { "ans": "e", "show": true },
+      "オ": { "ans": "o", "show": true }
+    },
+    "S": {
+      "サ": { "ans": "sa", "show": true },
+      "シ": { "ans": "shi", "show": true },
+      "ス": { "ans": "su", "show": true },
+      "セ": { "ans": "se", "show": true },
+      "ソ": { "ans": "so", "show": true }
+    },
+    "K": {
+      "カ": { "ans": "ka", "show": true },
+      "キ": { "ans": "ki", "show": true },
+      "ク": { "ans": "ku", "show": true },
+      "ケ": { "ans": "ke", "show": true },
+      "コ": { "ans": "ko", "show": true }
+    },
+    "T": {
+      "タ": { "ans": "ta", "show": true },
+      "チ": { "ans": "chi", "show": true },
+      "ツ": { "ans": "tsu", "show": true },
+      "テ": { "ans": "te", "show": true },
+      "ト": { "ans": "to", "show": true }
+    },
+    "N": {
+      "ナ": { "ans": "na", "show": true },
+      "ニ": { "ans": "ni", "show": true },
+      "ヌ": { "ans": "nu", "show": true },
+      "ネ": { "ans": "ne", "show": true },
+      "ノ": { "ans": "no", "show": true }
+    },
+    "H": {
+      "ハ": { "ans": "ha", "show": true },
+      "ヒ": { "ans": "hi", "show": true },
+      "フ": { "ans": "fu", "show": true },
+      "ヘ": { "ans": "he", "show": true },
+      "ホ": { "ans": "ho", "show": true }
+    },
+    "M": {
+      "マ": { "ans": "ma", "show": true },
+      "ミ": { "ans": "mi", "show": true },
+      "ム": { "ans": "mu", "show": true },
+      "メ": { "ans": "me", "show": true },
+      "モ": { "ans": "mo", "show": true }
+    },
+    "Y": {
+      "ヤ": { "ans": "ya", "show": true },
+      "ユ": { "ans": "yu", "show": true },
+      "ヨ": { "ans": "yo", "show": true }
+    },
+    "R": {
+      "ラ": { "ans": "ra", "show": true },
+      "リ": { "ans": "ri", "show": true },
+      "ル": { "ans": "ru", "show": true },
+      "レ": { "ans": "re", "show": true },
+      "ロ": { "ans": "ro", "show": true }
+    },
+    "W": {
+      "ワ": { "ans": "wa", "show": true },
+      "ヲ": { "ans": "wo", "show": true },
+      "ン": { "ans": "n", "show": true }
+    }
+  }
+}
