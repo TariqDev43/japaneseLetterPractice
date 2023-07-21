@@ -226,7 +226,7 @@ input {
 }
 
 .selected-letter {
-  background-color: var(--fgColor);
+  /* background-color: var(--fgColor); */
   box-shadow: var(--btn-shadow);
   padding: 3px 10px;
   border-radius: 8px;
@@ -238,6 +238,9 @@ input {
   -ms-user-select: none;
   user-select: none;
   position: relative;
+  background: linear-gradient(to bottom, var(--fgColor) 34%, var(--primary-color) 65%) top;
+  background-size: 100% 300%;
+  transition: 0.5s ease-out;
 }
 
 .selected-letter:hover:before {
@@ -255,8 +258,8 @@ input {
 }
 
 .selected-letter.selected {
-  background-color: var(--primary-color);
-  color: white;
+  color: var(--text-color);
+  background-position: bottom;
 }
 
 .selected-letter.selected:hover {
