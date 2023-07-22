@@ -293,10 +293,6 @@ input {
   animation: append-animate 0.3s linear;
 }
 
-.item-container:hover {
-  background-color: var(--letter-hover-color);
-}
-
 @keyframes append-animate {
   from {
     transform: scale(0);

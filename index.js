@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           e.target.parentNode.classList.add('correct');
           e.target.parentNode.classList.remove('error');
           e.target.classList.remove('error');
+          e.target.parentNode.nextSibling?.childNodes[1].focus();
         } else {
           e.target.classList.add('error');
           e.target.parentNode.classList.add('error');
@@ -273,6 +274,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     }
     addListenerToInputs(shuffledArray);
+
+    letterContent.lastChild?.addEventListener('keyup', (e) => {
+      if (e.key == 'Enter') {
+        displayLetterContent(shuffle(letters));
+        letterContent.firstChild?.childNodes[1].focus();
+      }
+    });
   };
 
   /*   Call Starter Function
